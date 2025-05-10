@@ -1,0 +1,208 @@
+
+/*------------------------------------section1-------------------------------------------*/
+
+:root{
+   /* --primaryColor : #ff274b; */
+   --primaryColor : #4f24eb;
+   --secondaryColor : #f7bcf7; 
+   --lightColor : #ffffff; 
+   --bgColor-1 : #171a1c; 
+   --bgColor-2 : #22282a;
+   --clr-neon : hsl(317 100% 54%);
+   --clr-bg : hsl(323 21% 16%);
+   --xxx :rgb(0,2,33);
+   --padding : 8%;
+}
+*{  
+    margin : 0; 
+    padding : 0; 
+    box-sizing : border-box; 
+} 
+html { 
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var(--lightColor);
+} 
+
+.home{
+    height : 100vh; 
+    background-color : var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+    
+}
+span{
+    color:var(--primaryColor);
+}
+h2{
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+nav{
+    
+    padding: 2.8rem var(--padding) 0rem var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+nav ul li a{
+    color: var(--lightColor);
+    text-decoration: none ;
+    text-transform: capitalize ;
+    font-weight: bold;
+    transition: 0.6s;
+    
+    
+}
+
+nav ul li a:hover{
+    color: var(--primaryColor);
+}
+
+.btn{
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    text-decoration: none;
+    font-weight: bold;
+    border: 0.15rem var(--lightColor) solid;
+    border-radius: 2rem;
+    padding: 0.8rem 1.7rem;
+    transition: 0.6s;
+   
+}
+.btn:hover{
+    background-color: transparent;
+    border: 0.15rem var(--primaryColor) solid;
+
+}
+
+.content{
+    
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*background-color: red;*/
+}
+h4{
+font-size: 1.25rem;
+}
+h1{
+    font-size: 3rem;  
+    margin: 2rem 0;  
+}
+h3{
+    font-size: 1.5rem; 
+    margin-bottom: 3.5rem;  
+}
+.det{
+margin: 2rem 0 2rem 0;
+}
+
+.container-texts{
+    position: relative;
+    top: 40px;
+    /*background-color: gold;
+    flex-grow: 1;*/
+}
+.social{
+    margin-top: 2.5rem;
+
+}
+.social img{
+    width: 2.5rem;
+    margin: 0 1.5rem 0  0 ;
+    transition: 0.4s;
+}
+.social img:hover{
+    transform: scale(1.3);
+}
+
+.container-images { 
+    width : 50%;
+     height : 90%; 
+    position : relative; 
+    align-self : flex-end; 
+    } 
+    .container-images img { 
+        position : absolute;
+        bottom : 0;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: bottom 1s,left 1s;
+    }
+    .container-images:hover .shape{
+       bottom: 40px;
+    }
+   .container-images:hover .mypic{
+        left: 50%;
+    }
+    /*---------------------------------------------section2----------------------------------------------*/
+.win_stt{
+    height : 70vh; 
+    padding: 0 var(--padding) 0 var(--padding);
+    background-color : var(--bgColor-1);
+    display: flex;
+    align-items: center;
+ }
+ .op1{
+    width: 20%;
+    height: 90%;
+    background-color: var(--bgColor-2);
+    border-radius: 2rem;
+
+ }
+ .stt1{
+    width: 80%;
+    height: 90%;
+    background-color: var(--bgColor-2);
+    border-radius: 2rem;
+    margin: 0 0 0 1%;
+    padding: 1rem;
+
+ }
+
+ .Area{
+   padding: 0.5rem;
+   resize: vertical;
+ }
+ .zone1{
+    display: flex;
+    align-items: center;
+ }
+
+ .zone2 :where(#speak,button,select){
+    color: var(--clr-neon);
+    /*background-color: var(--primaryColor);*/
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 0 0.35rem  white, 0 0 0.7rem  currentColor;
+    box-shadow: inset 0 0 0.7rem  currentColor , 0 0 0.7rem  currentColor;
+    border: 0.15rem var(--clr-neon) solid;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    transition: 0.6s;
+    
+}
+
+.zone2 :where(#speak,button,select):hover{
+    /*background-color: transparent;*/
+    background-color: var(--clr-neon);
+    border: 0.15rem var(--clr-bg) solid;
+    color: var(--clr-bg);
+    
+    }
+ #sel{
+   width: 30%;
+   height: 2.6rem;
+ }   
